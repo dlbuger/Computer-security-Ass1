@@ -45,9 +45,9 @@ def getTranslatedMessage(message, key):
 def cipher(message):
     for i in range(26):
         if(check(getTranslatedMessage(message,i))):
-            return getTranslatedMessage(message,i)+', C, -'+ str(i)
+            return getTranslatedMessage(message,i).upper() +', C, -'+ str(i)
         if (check(getTranslatedMessage(message, -i))):
-            return getTranslatedMessage(message, -i) + ', C, ' + str(i)
+            return getTranslatedMessage(message, -i).upper() + ', C, ' + str(i)
 
 def read_from_dic():
     with open('laji/dict_en.txt', 'r') as f:
