@@ -56,4 +56,3 @@ def cipher_T(message):
 
 
 
-print(cipher_T('saupw nrsed cesht oi'))

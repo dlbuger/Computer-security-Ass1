@@ -55,4 +55,4 @@ def read_from_dic():
         return f
 
 
-print(cipher_C('dghtx dwhsu rwhfw lrq'))
+

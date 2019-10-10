@@ -42,10 +42,11 @@ def get_modeifed_caesar(message,key,word):
 def cipher_M(message):
     words = get_words()
     for word in words:
-        for i in range(26):
+        for i in range(-13, 13):
             a = get_modeifed_caesar(message,i , ''.join(word))
-            if(check(a)):
+
+            if(check(a.lower().replace('', ' '))):
                 return a + ', M, ' + ''.join(word) +', '+str(i)
 
     return None
-print(cipher_M('etwje wxrepdfhfg exutx jqp'))
+

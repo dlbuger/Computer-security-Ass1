@@ -14,7 +14,7 @@ def check(message):
             word = ''.join(word)
             if(new_message.startswith(word)):
                 new_message = new_message[len(word):]
-                # print(new_message)
+                #print(new_message)
                 flag = 1
         if(flag == 0):
             return 0
